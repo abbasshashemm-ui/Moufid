@@ -536,6 +536,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero {
+    background-image: url('../assets/mobile.png');
+    background-position: center top;
+  }
+
   .section {
     padding: 4rem 0;
   }
