@@ -536,27 +536,122 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }
   
-  .contact-wrapper {
-    /* No longer a grid */
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
-  
+
+  .hero-cta {
+    justify-content: flex-start;
+  }
+
   .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.98);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
-  
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
   .hamburger {
     display: flex;
   }
   
+  .timeline::after {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    padding: 1.5rem 0 1.5rem 50px;
+  }
+  
+  .timeline-dot {
+    left: 12px;
+    top: 2rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .timeline-role {
+    font-size: 1.25rem;
+  }
+
   .company-logo {
     position: relative;
     top: 0;
-    right: 0;
+    right: auto;
     margin-bottom: 1rem;
-    max-width: 120px;
+    max-width: 100px;
+    display: block;
+  }
+
+  .accolade-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .timeline-item {
+    padding: 1.5rem 0 1.5rem 40px;
+  }
+
+  .timeline::after {
+    left: 15px;
+  }
+
+  .timeline-dot {
+    left: 7px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
   }
 }

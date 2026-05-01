@@ -12,19 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle (simplified for now)
+    // Mobile Menu Toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
     
     hamburger.addEventListener('click', () => {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.position = 'absolute';
-        navLinks.style.top = '100%';
-        navLinks.style.left = '0';
-        navLinks.style.width = '100%';
-        navLinks.style.background = 'rgba(10, 10, 10, 0.95)';
-        navLinks.style.padding = '2rem';
+        navLinks.classList.toggle('active');
+        // Reset any inline display style that might have been added
+        navLinks.style.display = ''; 
     });
 
     // Gallery Filtering
