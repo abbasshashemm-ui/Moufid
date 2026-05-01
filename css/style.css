@@ -538,7 +538,9 @@ footer {
 @media (max-width: 768px) {
   .hero {
     background-image: url('../assets/mobile.png');
-    background-position: center top;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
   }
 
   .section {
